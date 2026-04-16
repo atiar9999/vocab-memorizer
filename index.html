@@ -288,7 +288,9 @@ let vocabulary = JSON.parse(localStorage.getItem('neon_vocab')) || [];
 
             const card = document.createElement('div');
             card.className = `flip-card`;
-            card.style.animationDelay = `${index * 0.05}s`;
+           // To this (or just delete the line):
+card.style.animation = 'none';
+card.style.opacity = '1';
             
             // Logic for initial rotation based on mode
             let initialFlipClass = (currentMode === 'bn') ? 'is-flipped' : '';
