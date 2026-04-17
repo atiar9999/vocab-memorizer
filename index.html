@@ -6,7 +6,7 @@
     <title>NEON VOCAB AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Syne+Mono&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Syne+Mono&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2305070a%22/><text y=%22.9em%22 font-size=%2280%22 x=%225%22 fill=%22%2300f2ff%22 font-family=%22monospace%22 font-weight=%22bold%22>V</text><circle cx=%2270%22 cy=%2230%22 r=%2210%22 fill=%22%23bc13fe%22/></svg>">
     <style>
         /* ============================================================
@@ -42,6 +42,7 @@
             --font-display: 'Oxanium', sans-serif;
             --font-mono:    'Syne Mono', monospace;
             --font-body:    'DM Sans', sans-serif;
+            --font-bangla:  'Tiro Bangla', serif;
 
             --transition-base: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -408,6 +409,9 @@
         .card-front {
             border-left: 3px solid var(--teal);
             color: var(--teal);
+            font-family: var(--font-bangla);
+            font-size: 1.15rem;
+            line-height: 1.5;
         }
 
         .card-front::before {
@@ -418,6 +422,9 @@
             border-left: 3px solid var(--rose);
             color: var(--rose);
             transform: rotateY(180deg);
+            font-family: var(--font-bangla);
+            font-size: 1.15rem;
+            line-height: 1.5;
         }
 
         .card-back::before {
